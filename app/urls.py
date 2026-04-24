@@ -16,6 +16,7 @@ from core.views import (
     AutorViewSet,
     CategoriaViewSet,
     EditoraViewSet,
+    LivroViewSet,
     UserRegistrationView,
     UserViewSet,
 )
@@ -26,6 +27,7 @@ router.register(r'usuarios', UserViewSet, basename='usuarios')
 router.register(r'categorias', CategoriaViewSet, basename='categorias')
 router.register(r'editoras', EditoraViewSet, basename='editoras')
 router.register(r'autores', AutorViewSet, basename='autores')
+router.register(r'livros', LivroViewSet, basename='livros')
 
 
 urlpatterns = [
